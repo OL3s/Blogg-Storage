@@ -37,20 +37,42 @@ Posts are grouped by game slug.
 ```text
 games/
   singleplayer-roguelite/
+    index.json
+    image/
+      index-landscape.png
+      index-portrait.png
     blog/
       2026-05-09-p1-menu-and-character-setup.md
   multiplayer-arena/
+    index.json
+    image/
+      index-landscape.png
+      index-portrait.png
     blog/
       2026-05-09-building-the-arena-foundation.md
       2026-05-10-player-items-and-damage-visuals.md
 ```
 
-The folder name must match the game `slug` used by the homepage app.
+Every direct subfolder under `games/` becomes a game page on the homepage. The folder name is used as the game `slug`.
 
-Current game slugs:
+## Game Metadata
 
-- `singleplayer-roguelite`
-- `multiplayer-arena`
+Each game can include an optional `index.json` file for page text and repository details.
+
+Example:
+
+```json
+{
+  "name": "MultiplayerArena",
+  "teaser": "Fast 2D PvP arena fights where bullets, movement, and destruction decide the round.",
+  "mainDescription": "A fast 2D arena fighter where movement, aim, and destructible maps shape every round.",
+  "secondaryDescription": "Longer page description shown on the game detail page.",
+  "githubRepo": "OL3s/MultiplayerArenaV2",
+  "githubUrl": "https://github.com/OL3s/MultiplayerArenaV2.git"
+}
+```
+
+If `index.json` is missing, the homepage derives the game name from the folder slug and shows failed-to-fetch messages for missing page text.
 
 Expected path pattern:
 
@@ -63,6 +85,28 @@ Example:
 ```text
 games/multiplayer-arena/blog/2026-05-10-player-items-and-damage-visuals.md
 ```
+
+## Game Preview Images
+
+Game preview images live next to the `blog/` folder in an `image/` folder.
+
+Expected image paths:
+
+```text
+games/<game-slug>/image/index-landscape.<ext>
+games/<game-slug>/image/index-portrait.<ext>
+```
+
+Image rules:
+
+- Use `index-landscape` for the wide preview image.
+- Use `index-portrait` for the square/mobile preview image.
+- Landscape should be `2:1`.
+- Portrait should be `1:1`.
+- Supported extensions are `.avif`, `.webp`, `.jpg`, `.jpeg`, `.png`, and `.svg`.
+- `main-landscape` and `main-portrait` are also supported as fallbacks, but `index-*` is preferred because it matches the folder entry point.
+
+If a game has no image folder or no matching image file, the homepage shows a failed-to-fetch message until images are added.
 
 ## File Naming
 

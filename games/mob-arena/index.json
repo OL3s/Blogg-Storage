@@ -1,0 +1,8 @@
+{
+  "name": "MobArena",
+  "teaser": "Arena survival against waves of enemies, built as a focused combat project.",
+  "mainDescription": "A wave-based arena combat project focused on readable action, enemy pressure, and practical progression systems.",
+  "secondaryDescription": "MobArena has its own generated game page because it exists as a folder under the Blogg-Storage games directory. Add blog posts and preview images here to update the website without changing homepage code.",
+  "githubRepo": "OL3s/MobArena",
+  "githubUrl": "https://github.com/OL3s/MobArena.git"
+}

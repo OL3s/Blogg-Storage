@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1200" viewBox="0 0 2400 1200" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="236" y1="86" x2="2130" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#120B17"/>
+      <stop offset="0.48" stop-color="#26142D"/>
+      <stop offset="1" stop-color="#3B1535"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1180 572) rotate(90) scale(500 1080)">
+      <stop stop-color="#FF7EC5" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#FF7EC5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="beamA" x1="620" y1="874" x2="1778" y2="314" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFAA70"/>
+      <stop offset="1" stop-color="#FF5EB8"/>
+    </linearGradient>
+    <linearGradient id="beamB" x1="654" y1="314" x2="1758" y2="916" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6E9BFF"/>
+      <stop offset="1" stop-color="#8BFFDB"/>
+    </linearGradient>
+  </defs>
+  <rect width="2400" height="1200" fill="url(#bg)"/>
+  <rect width="2400" height="1200" fill="url(#glow)"/>
+  <path d="M356 284H2044" stroke="#5D2A5B" stroke-width="10" stroke-linecap="round" opacity="0.6"/>
+  <path d="M296 432H2104" stroke="#5D2A5B" stroke-width="10" stroke-linecap="round" opacity="0.55"/>
+  <path d="M256 596H2144" stroke="#5D2A5B" stroke-width="10" stroke-linecap="round" opacity="0.5"/>
+  <path d="M296 760H2104" stroke="#5D2A5B" stroke-width="10" stroke-linecap="round" opacity="0.55"/>
+  <path d="M356 908H2044" stroke="#5D2A5B" stroke-width="10" stroke-linecap="round" opacity="0.6"/>
+  <path d="M596 180V1020" stroke="#4B2450" stroke-width="10" stroke-linecap="round" opacity="0.45"/>
+  <path d="M894 180V1020" stroke="#4B2450" stroke-width="10" stroke-linecap="round" opacity="0.45"/>
+  <path d="M1200 180V1020" stroke="#4B2450" stroke-width="10" stroke-linecap="round" opacity="0.45"/>
+  <path d="M1506 180V1020" stroke="#4B2450" stroke-width="10" stroke-linecap="round" opacity="0.45"/>
+  <path d="M1804 180V1020" stroke="#4B2450" stroke-width="10" stroke-linecap="round" opacity="0.45"/>
+  <path d="M632 864L1772 328" stroke="url(#beamA)" stroke-width="28" stroke-linecap="round"/>
+  <path d="M690 314L1736 886" stroke="url(#beamB)" stroke-width="22" stroke-linecap="round"/>
+  <circle cx="760" cy="826" r="58" fill="#7AA5FF"/>
+  <circle cx="1644" cy="398" r="58" fill="#FF7CC5"/>
+  <circle cx="760" cy="826" r="94" stroke="#7AA5FF" stroke-opacity="0.32" stroke-width="18"/>
+  <circle cx="1644" cy="398" r="94" stroke="#FF7CC5" stroke-opacity="0.32" stroke-width="18"/>
+  <path d="M1050 582L1120 634L1086 708L998 726L930 656L962 580L1050 582Z" fill="#27131D" stroke="#FF946E" stroke-width="10"/>
+  <path d="M1350 496L1416 548L1386 620L1302 636L1236 572L1268 500L1350 496Z" fill="#22162A" stroke="#8AE7DB" stroke-width="10"/>
+</svg>
