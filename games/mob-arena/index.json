@@ -2,7 +2,7 @@
   "name": "Mob Gladiator",
   "teaser": "Arena survival against waves of enemies, built as a focused combat project.",
   "mainDescription": "A wave-based arena combat project focused on readable action, enemy pressure, and practical progression systems.",
-  "secondaryDescription": "MobArena has its own generated game page because it exists as a folder under the Blogg-Storage games directory. Add blog posts and preview images here to update the website without changing homepage code.",
+  "secondaryDescription": "Mob Gladiator is about holding your ground in a dangerous arena while enemy waves keep pushing closer. The focus is tight combat, clear enemy pressure, and upgrades that help each run feel stronger without losing the simple survival core.",
   "githubRepo": "OL3s/MobArena",
   "githubUrl": "https://github.com/OL3s/MobArena.git"
 }
