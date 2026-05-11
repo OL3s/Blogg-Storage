@@ -6,8 +6,6 @@ This repository contains the blog posts only. The website code lives in the sepa
 
 It also contains dynamic page content used by the homepage, such as game metadata, preview images, and about-us page/member data.
 
-The homepage starts by reading `site-index.json` over the raw GitHub URL. Keep this file updated when adding or removing game folders, blog posts, images, or team members.
-
 Homepage repository:
 
 ```text
@@ -56,14 +54,6 @@ games/
       2026-05-09-building-the-arena-foundation.md
       2026-05-10-player-items-and-damage-visuals.md
 ```
-
-Root site index:
-
-```text
-site-index.json
-```
-
-The site index lists game slugs, preview image filenames, blog post filenames, and about-us member JSON filenames. This avoids relying on repeated GitHub Contents API directory requests, which can be rate-limited.
 
 About page content lives outside `games/`:
 
