@@ -4,6 +4,8 @@ Markdown blog storage for the Wigum Gaming homepage.
 
 This repository contains the blog posts only. The website code lives in the separate homepage repository and fetches these Markdown files from GitHub at runtime.
 
+It also contains dynamic page content used by the homepage, such as game metadata, preview images, and about-us page/member data.
+
 Homepage repository:
 
 ```text
@@ -52,6 +54,35 @@ games/
       2026-05-09-building-the-arena-foundation.md
       2026-05-10-player-items-and-damage-visuals.md
 ```
+
+About page content lives outside `games/`:
+
+```text
+about-us/
+  index.json
+  image/
+    placeholder-member.svg
+  members/
+    ole-kristian-wigum.json
+```
+
+The about page reads `about-us/index.json` for the top page text and `about-us/members/*.json` for team members.
+
+Member JSON example:
+
+```json
+{
+  "name": "Ole Kristian Wigum",
+  "role": "Founder and coder",
+  "image": "placeholder-member.svg",
+  "paragraphs": [
+    "First paragraph.",
+    "Second paragraph."
+  ]
+}
+```
+
+The `image` value points to a file inside `about-us/image/`.
 
 Every direct subfolder under `games/` becomes a game page on the homepage. The folder name is used as the game `slug`.
 
