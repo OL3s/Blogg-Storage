@@ -1,0 +1,40 @@
+{
+  "games": [
+    {
+      "slug": "mob-arena",
+      "images": {
+        "landscape": "index-landscape.svg",
+        "portrait": "index-portrait.svg"
+      },
+      "blogFiles": [
+        "2026-05-11-mobarena-foundation-and-roadmap.md"
+      ]
+    },
+    {
+      "slug": "multiplayer-arena",
+      "images": {
+        "landscape": "index-landscape.svg",
+        "portrait": "index-portrait.svg"
+      },
+      "blogFiles": [
+        "2026-05-09-building-the-arena-foundation.md",
+        "2026-05-10-player-items-and-damage-visuals.md"
+      ]
+    },
+    {
+      "slug": "singleplayer-roguelite",
+      "images": {
+        "landscape": "index-landscape.svg",
+        "portrait": "index-portrait.svg"
+      },
+      "blogFiles": [
+        "2026-05-09-p1-menu-and-character-setup.md"
+      ]
+    }
+  ],
+  "aboutUs": {
+    "members": [
+      "ole-kristian-wigum.json"
+    ]
+  }
+}
