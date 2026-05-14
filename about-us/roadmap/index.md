@@ -1,5 +1,5 @@
 ---
-title: Wigum Gaming Roadmap
+title: Roadmap
 ---
 
-A simple company-level roadmap for where Wigum Gaming is heading next. These steps are meant to show the planned development path without locking every project into a fixed release date.
+A simple roadmap for where Wigum Gaming is headed. These are the projects and direction we currently have planned, while still leaving room to learn, adjust, and improve as the studio grows.
