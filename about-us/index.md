@@ -3,12 +3,6 @@ title: About Us.
 releaseNote: While this is currently a hobby project, we are gearing up to release polished, finished products starting in 2027.
 ---
 
-**Wigum Gaming** is an independent game studio focused on creating *accessible multiplayer games* built around shared experiences. We develop games designed to run across as many devices as possible - including PCs, consoles, phones, tablets, and lower-end hardware - so more people can play together without needing expensive setups.
+**Wigum Gaming** is an independent game studio focused on accessible multiplayer games built around shared experiences. We design games to run across as many devices as possible, including PCs, consoles, phones, tablets, and lower-end hardware, with flexible ways to play together through online multiplayer, LAN, local co-op, split-screen, online split-screen, or combinations of these systems.
 
-Our main focus is **multiplayer compatibility and flexibility**. We want players on different devices to still be able to join the same experience, whether through online multiplayer, LAN, local co-op, split-screen, online split-screen - or heck, why not combine all of it: *local players sharing one device while joining online lobbies with friends on other platforms*. Future games may also allow mobile players to participate in adapted roles depending on the type of game.
-
-We place strong emphasis on **controller compatibility**, especially for phones and tablets, allowing low-end portable devices to become capable gaming platforms through gamepads and shared local play.
-
-The studio's first milestone is building a strong foundation through **2D games**, focusing on multiplayer systems, cross-device support, and scalable workflows. Long term, the goal is to expand into *stylized low-poly 3D games* that remain lightweight and playable across a wide range of hardware.
-
-Wigum Gaming was created around the belief that **games should help bring people together**. Modern gaming can often become isolated by hardware limitations, platform restrictions, expensive equipment, or systems that make it harder for friends and families to simply play together. We want to build practical, player-focused games that are *easy to access*, fair in pricing, and centered around memorable shared experiences across devices and generations of players.
+Wigum Gaming was created around the belief that **games should help bring people together**. Modern gaming often makes that harder through platform restrictions, hardware requirements, expensive equipment, and systems that make simple shared play more difficult than it should be. We want to help fix that by building practical, player-focused games that are easy to access, fair in pricing, and centered around memorable shared experiences across devices and generations of players. You can see more of the planned development path in the roadmap below.
