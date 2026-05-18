@@ -115,6 +115,13 @@ If `index.md` is missing, the homepage cannot load that game page content.
 
 English is the default language and uses the normal `.md` filename. Translations use a language suffix before `.md`.
 
+Current supported content languages:
+
+```text
+English/default = unsuffixed .md
+Norwegian = .no.md
+```
+
 Examples:
 
 ```text
@@ -131,6 +138,69 @@ Fallback:
 - If the selected language file exists, the homepage uses it.
 - If it does not exist, the homepage uses the default English `.md` file.
 - Blog posts are not localized yet and should keep the existing unsuffixed `.md` filenames.
+
+Localized content currently applies to essential site content only:
+
+- Game metadata pages: `games/<game-slug>/index.md` and `games/<game-slug>/index.no.md`.
+- About page: `about-us/index.md` and `about-us/index.no.md`.
+- Team members: `about-us/members/<member-slug>.md` and `about-us/members/<member-slug>.no.md`.
+- Roadmap page and items: `about-us/roadmap/*.md` and `about-us/roadmap/*.no.md`.
+
+Do not localize blog posts yet. Blog post files should stay like this:
+
+```text
+games/<game-slug>/blog/YYYY-MM-DD-short-title.md
+```
+
+Do not create blog post files like this unless the homepage app is updated to support localized blog posts:
+
+```text
+games/<game-slug>/blog/YYYY-MM-DD-short-title.no.md
+```
+
+## Adding A New Content Language
+
+The homepage repository controls which languages exist in `src/services/i18n.js`. Add the language there first, then add matching content files here.
+
+Required steps:
+
+1. Choose a language code and keep it consistent, for example `de` for German.
+2. Add the language code, display label, flag, and UI strings in the homepage repository at `src/services/i18n.js`.
+3. Add translated Markdown files in this repository using `.<code>.md` before the extension.
+4. Keep English/default files unsuffixed as `.md`.
+5. Leave blog posts unsuffixed unless blog localization is explicitly implemented later.
+6. Push this repository to `main` so the static homepage can fetch the content.
+
+Required translated files for each language:
+
+```text
+about-us/index.<code>.md
+about-us/members/<member-slug>.<code>.md
+about-us/roadmap/index.<code>.md
+about-us/roadmap/<roadmap-item>.<code>.md
+games/<game-slug>/index.<code>.md
+```
+
+Example for German:
+
+```text
+about-us/index.de.md
+about-us/members/ole-kristian-wigum.de.md
+about-us/roadmap/index.de.md
+about-us/roadmap/001-mob-gladiator.de.md
+games/multiplayer-arena/index.de.md
+```
+
+Fallback means a new language can be added gradually. If `games/mob-arena/index.de.md` is missing, the homepage shows `games/mob-arena/index.md` instead.
+
+Agent checklist for content language work:
+
+1. Check the homepage `src/services/i18n.js` for supported language codes before creating translated files.
+2. Use the exact same language code in filenames.
+3. Never rename or delete the unsuffixed English/default `.md` file while adding a translation.
+4. Keep front matter keys the same across language variants.
+5. Keep image references shared unless a language-specific image is explicitly needed.
+6. Do not commit or push unless the user explicitly asks for it.
 
 Expected path pattern:
 
