@@ -92,7 +92,9 @@ Every direct subfolder under `games/` becomes a game page on the homepage. The f
 
 ## Game Metadata
 
-Each game includes an `index.md` file for page text and repository details.
+Each game includes an `index.md` file for the core game metadata and long game-page description.
+
+Front matter holds structured values used by cards, navigation, and external links. The Markdown body below `---` is the long description shown on the game detail page only.
 
 Example:
 
@@ -105,8 +107,6 @@ githubUrl: https://github.com/OL3s/MultiplayerArenaV2.git
 ---
 
 A fast 2D arena fighter where movement, aim, and destructible maps shape every round.
-
-Longer page description shown on the game detail page.
 ```
 
 If `index.md` is missing, the homepage cannot load that game page content.

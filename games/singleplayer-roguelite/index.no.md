@@ -5,6 +5,4 @@ githubRepo: OL3s/SinglePlayerRogueliteV2
 githubUrl: https://github.com/OL3s/SinglePlayerRogueliteV2.git
 ---
 
-Et roguelite-spill bygget rundt å velge vei, bli sterkere og jakte på tre tapte edelsteiner.
-
 Hvert forsøk er en ny sjanse til å presse dypere, ta bedre valg og forberede seg på neste boss. Mellom kampene bygger spilleren momentum gjennom oppgraderinger, gjenstander og stopp ved utposter før neste steg mot å samle alle tre edelsteinene.
