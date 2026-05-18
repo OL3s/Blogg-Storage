@@ -39,14 +39,16 @@ Posts are grouped by game slug.
 ```text
 games/
   singleplayer-roguelite/
-    index.json
+    index.md
+    index.no.md
     image/
       index-landscape.png
       index-portrait.png
     blog/
       2026-05-09-p1-menu-and-character-setup.md
   multiplayer-arena/
-    index.json
+    index.md
+    index.no.md
     image/
       index-landscape.png
       index-portrait.png
@@ -59,27 +61,29 @@ About page content lives outside `games/`:
 
 ```text
 about-us/
-  index.json
+  index.md
+  index.no.md
   image/
     placeholder-member.svg
   members/
-    ole-kristian-wigum.json
+    ole-kristian-wigum.md
+    ole-kristian-wigum.no.md
 ```
 
-The about page reads `about-us/index.json` for the top page text and `about-us/members/*.json` for team members.
+The about page reads `about-us/index.md` for the top page text and `about-us/members/*.md` for team members.
 
-Member JSON example:
+Member Markdown example:
 
-```json
-{
-  "name": "Ole Kristian Wigum",
-  "role": "Founder and coder",
-  "image": "placeholder-member.svg",
-  "paragraphs": [
-    "First paragraph.",
-    "Second paragraph."
-  ]
-}
+```md
+---
+name: Ole Kristian Wigum
+role: Founder and coder
+image: placeholder-member.svg
+---
+
+First paragraph.
+
+Second paragraph.
 ```
 
 The `image` value points to a file inside `about-us/image/`.
@@ -88,22 +92,45 @@ Every direct subfolder under `games/` becomes a game page on the homepage. The f
 
 ## Game Metadata
 
-Each game can include an optional `index.json` file for page text and repository details.
+Each game includes an `index.md` file for page text and repository details.
 
 Example:
 
-```json
-{
-  "name": "MultiplayerArena",
-  "teaser": "Fast 2D PvP arena fights where bullets, movement, and destruction decide the round.",
-  "mainDescription": "A fast 2D arena fighter where movement, aim, and destructible maps shape every round.",
-  "secondaryDescription": "Longer page description shown on the game detail page.",
-  "githubRepo": "OL3s/MultiplayerArenaV2",
-  "githubUrl": "https://github.com/OL3s/MultiplayerArenaV2.git"
-}
+```md
+---
+name: MultiplayerArena
+teaser: Fast 2D PvP arena fights where bullets, movement, and destruction decide the round.
+githubRepo: OL3s/MultiplayerArenaV2
+githubUrl: https://github.com/OL3s/MultiplayerArenaV2.git
+---
+
+A fast 2D arena fighter where movement, aim, and destructible maps shape every round.
+
+Longer page description shown on the game detail page.
 ```
 
-If `index.json` is missing, the homepage derives the game name from the folder slug and shows failed-to-fetch messages for missing page text.
+If `index.md` is missing, the homepage cannot load that game page content.
+
+## Language Files
+
+English is the default language and uses the normal `.md` filename. Translations use a language suffix before `.md`.
+
+Examples:
+
+```text
+about-us/index.md
+about-us/index.no.md
+about-us/members/ole-kristian-wigum.md
+about-us/members/ole-kristian-wigum.no.md
+games/multiplayer-arena/index.md
+games/multiplayer-arena/index.no.md
+```
+
+Fallback:
+
+- If the selected language file exists, the homepage uses it.
+- If it does not exist, the homepage uses the default English `.md` file.
+- Blog posts are not localized yet and should keep the existing unsuffixed `.md` filenames.
 
 Expected path pattern:
 
